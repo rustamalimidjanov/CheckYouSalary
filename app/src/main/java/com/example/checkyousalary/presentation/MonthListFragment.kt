@@ -44,7 +44,7 @@ class MonthListFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMonthListBinding.inflate(inflater, container, false)
         monthRecyclerView =
             binding.monthRecyclerView.findViewById(R.id.month_recycler_view) as RecyclerView
