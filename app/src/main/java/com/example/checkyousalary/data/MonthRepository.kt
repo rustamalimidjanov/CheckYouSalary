@@ -23,7 +23,7 @@ class MonthRepository private constructor(context: Context) {
 
     fun getMonth(id: UUID): LiveData<MonthData?> = monthDao.getMonth(id = id)
 
-    fun updateCrime(month: MonthData) {
+    fun updateMonth(month: MonthData) {
         executor.execute {
             monthDao.updateMonth(month = month)
         }
